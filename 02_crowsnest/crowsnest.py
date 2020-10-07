@@ -29,10 +29,7 @@ def main():
 
     args = get_args()
     name = args.name
-    article = 'a'
-
-    if name[0].lower() in 'aeiou' :
-        article += 'n'
+    article = 'an' if name[0].lower() in 'aeiou' else 'a'
 
     print(f'Ahoy, Captain, {article} {name} off the larboard bow!')
 
