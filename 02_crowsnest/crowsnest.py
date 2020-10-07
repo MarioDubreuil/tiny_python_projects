@@ -31,7 +31,7 @@ def main():
     name = args.name
     article = 'a'
 
-    if name[0].lower() in ['a', 'e', 'i', 'o', 'u'] :
+    if name[0].lower() in 'aeiou' :
         article += 'n'
 
     print(f'Ahoy, Captain, {article} {name} off the larboard bow!')
